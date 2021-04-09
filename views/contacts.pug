@@ -1,2 +1,236 @@
 extends _layout
 block body
+  .px-4.py-8(scroll-region='' class='md:flex-1 md:p-12 md:overflow-y-auto')
+    div
+      // 
+      // 
+    div
+      h1.mb-8.font-bold.text-3xl Contacts
+      .mb-6.flex.justify-between.items-center
+        .flex.items-center.w-full.max-w-md.mr-4
+          .flex.w-full.bg-white.shadow.rounded
+            button.px-4.rounded-l.border-r(type='button' class='md:px-6 hover:bg-gray-100 focus:border-white focus:ring focus:z-10')
+              .flex.items-baseline
+                span.text-gray-700.hidden(class='md:inline') Filter
+                svg.w-2.h-2.fill-gray-700(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 961.243 599.998' class='md:ml-2')
+                  path(d='M239.998 239.999L0 0h961.243L721.246 240c-131.999 132-240.28 240-240.624 239.999-.345-.001-108.625-108.001-240.624-240z')
+              // 
+            input.relative.w-full.px-6.py-3.rounded-r(autocomplete='off' type='text' name='search' placeholder='Search…' class='focus:ring')
+          button.ml-3.text-sm.text-gray-500(type='button' class='hover:text-gray-700 focus:text-indigo-500') Reset
+        a.btn-indigo(href='/contacts/new')
+          span Create
+          span.hidden(class='md:inline') Contact
+      .bg-white.rounded-md.shadow.overflow-x-auto
+        table.w-full.whitespace-nowrap
+          tbody
+            tr.text-left.font-bold
+              th.px-6.pt-6.pb-4 Name
+              th.px-6.pt-6.pb-4 Organization
+              th.px-6.pt-6.pb-4 City
+              th.px-6.pt-6.pb-4(colspan='2') Phone
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/5/edit' class='focus:text-indigo-500')
+                  | Sister Altenwerth
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/5/edit')
+                  div
+                    | Stokes-Cronin
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/5/edit')
+                  | New Zander
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/5/edit')
+                  | 1-855-240-5180
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/5/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/68/edit' class='focus:text-indigo-500')
+                  | Kenna Ankunding
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/68/edit')
+                  div
+                    | Murphy Ltd
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/68/edit')
+                  | Port Arielville
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/68/edit')
+                  | 866-958-1818
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/68/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/90/edit' class='focus:text-indigo-500')
+                  | Rahsaan Armstrong
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/90/edit')
+                  div
+                    | Olson-Kuphal
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/90/edit')
+                  | Port Alicia
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/90/edit')
+                  | 888.573.7960
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/90/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/73/edit' class='focus:text-indigo-500')
+                  | Aileen Barton
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/73/edit')
+                  div
+                    | Barton and Sons
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/73/edit')
+                  | Lake Alexzandershire
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/73/edit')
+                  | 877-702-7204
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/73/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/55/edit' class='focus:text-indigo-500')
+                  | Alexandre Bayer
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/55/edit')
+                  div
+                    | Pacocha Group
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/55/edit')
+                  | New Eve
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/55/edit')
+                  | 800.858.6831
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/55/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/61/edit' class='focus:text-indigo-500')
+                  | Gerda Bayer
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/61/edit')
+                  div
+                    | Stamm-Greenfelder
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/61/edit')
+                  | North Noel
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/61/edit')
+                  | 1-877-983-4744
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/61/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/88/edit' class='focus:text-indigo-500')
+                  | Jany Bergnaum
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/88/edit')
+                  div
+                    | Bode-Johnson
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/88/edit')
+                  | South Gia
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/88/edit')
+                  | 1-855-566-6259
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/88/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/30/edit' class='focus:text-indigo-500')
+                  | Carlos Bernhard
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/30/edit')
+                  div
+                    | Labadie-Little
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/30/edit')
+                  | Port Devonteton
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/30/edit')
+                  | (844) 587-3744
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/30/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/53/edit' class='focus:text-indigo-500')
+                  | Leslie Bode
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/53/edit')
+                  div
+                    | Roob and Sons
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/53/edit')
+                  | Rolfsonfort
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/53/edit')
+                  | (855) 239-1937
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/53/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            tr(class='hover:bg-gray-100 focus-within:bg-gray-100')
+              td.border-t
+                a.px-6.py-4.flex.items-center(href='http://demo.inertiajs.com/contacts/51/edit' class='focus:text-indigo-500')
+                  | Al Boehm
+                  // 
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/51/edit')
+                  div
+                    | Corkery-Beier
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/51/edit')
+                  | Alenechester
+              td.border-t
+                a.px-6.py-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/51/edit')
+                  | (800) 856-1536
+              td.border-t.w-px
+                a.px-4.flex.items-center(tabindex='-1' href='http://demo.inertiajs.com/contacts/51/edit')
+                  svg.block.w-6.h-6.fill-gray-400(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20')
+                    polygon(points='12.95 10.707 13.657 10 8 4.343 6.586 5.757 10.828 10 6.586 14.243 8 15.657 12.95 10.707')
+            // 
+      .mt-6
+        .flex.flex-wrap.-mb-1
+          .mr-1.mb-1.px-4.py-3.text-sm.leading-4.text-gray-400.border.rounded « Previous
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded.bg-white(href='http://demo.inertiajs.com/contacts?page=1' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 1
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=2' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 2
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=3' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 3
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=4' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 4
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=5' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 5
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=6' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 6
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=7' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 7
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=8' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 8
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=9' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 9
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=10' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') 10
+          a.mr-1.mb-1.px-4.py-3.text-sm.leading-4.border.rounded(href='http://demo.inertiajs.com/contacts?page=2' class='hover:bg-white focus:border-indigo-500 focus:text-indigo-500') Next »
+

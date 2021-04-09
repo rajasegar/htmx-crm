@@ -1,0 +1,54 @@
+extends _layout
+block body
+  .px-4.py-8(scroll-region='' class='md:flex-1 md:p-12 md:overflow-y-auto')
+    div
+      // 
+      // 
+    div
+      h1.mb-8.font-bold.text-3xl
+        a.text-indigo-400(href='/organizations' class='hover:text-indigo-600') Organizations
+        span.text-indigo-400.font-medium /
+        |  Create
+      .bg-white.rounded-md.shadow.overflow-hidden.max-w-3xl
+        form
+          .p-8.-mr-6.-mb-8.flex.flex-wrap
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-76') Name:
+              input#text-input-76.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-77') Email:
+              input#text-input-77.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-78') Phone:
+              input#text-input-78.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-79') Address:
+              input#text-input-79.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-80') City:
+              input#text-input-80.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-81') Province/State:
+              input#text-input-81.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='select-input-82') Country:
+              select#select-input-82.form-select
+                option(value='')
+                option(value='CA') Canada
+                option(value='US') United States
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-83') Postal code:
+              input#text-input-83.form-input(type='text')
+              // 
+          .px-8.py-4.bg-gray-50.border-t.border-gray-100.flex.justify-end.items-center
+            button.flex.items-center.btn-indigo(type='submit')
+              // 
+              | Create Organization
+

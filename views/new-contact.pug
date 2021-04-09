@@ -1,0 +1,164 @@
+extends _layout
+block body
+  .px-4.py-8(scroll-region='' class='md:flex-1 md:p-12 md:overflow-y-auto')
+    div
+      // 
+      // 
+    div
+      h1.mb-8.font-bold.text-3xl
+        a.text-indigo-400(href='/contacts' class='hover:text-indigo-600') Contacts
+        span.text-indigo-400.font-medium /
+        |  Create
+      .bg-white.rounded-md.shadow.overflow-hidden.max-w-3xl
+        form
+          .p-8.-mr-6.-mb-8.flex.flex-wrap
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-50') First name:
+              input#text-input-50.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-51') Last name:
+              input#text-input-51.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='select-input-52') Organization:
+              select#select-input-52.form-select
+                option(value='')
+                option(value='4') Abshire LLC dfsdfsdf
+                option(value='43') Anderson, Kautzer and Herman
+                option(value='70') Bartell PLC
+                option(value='45') Barton and Sons
+                option(value='100') Beatty-Tillman
+                option(value='9') Bernhard-Dare
+                option(value='72') Bernhard, Friesen and Champlin
+                option(value='67') Bernier-Kohler
+                option(value='25') Bode-Johnson
+                option(value='87') Bogan-Christiansen
+                option(value='3') Bosco, Price and Hoeger
+                option(value='91') Braun PLC
+                option(value='28') Cartwright, Klein and Hettinger
+                option(value='34') Cassin, Pacocha and Herman
+                option(value='39') Collins-Hayes
+                option(value='73') Corkery-Beier
+                option(value='50') Cronin, Rutherford and Grady
+                option(value='12') Cummings-Prohaska
+                option(value='35') Daugherty and Sons
+                option(value='49') Deckow, Wunsch and Little
+                option(value='77') Dicki-Pfeffer
+                option(value='30') Douglas-Ankunding
+                option(value='86') Emmerich LLC
+                option(value='88') Farrell, Kshlerin and Gutkowski
+                option(value='11') Fisher, Tromp and Batz
+                option(value='78') Funk, Hagenes and Rogahn
+                option(value='61') Gerlach-Pfeffer
+                option(value='14') Gerlach PLC
+                option(value='22') Goldner-Bechtelar
+                option(value='44') Gutmann, Welch and Raynor
+                option(value='41') Haley and Sons
+                option(value='46') Harvey-Kihn
+                option(value='15') Hayes, Pagac and Senger
+                option(value='97') Heathcote-Stroman
+                option(value='63') Herman Group
+                option(value='84') Hermann-Bayer
+                option(value='82') Kiehn Ltd
+                option(value='76') Kihn Inc
+                option(value='18') King, Friesen and Nader
+                option(value='65') Kirlin, Sauer and Klocko
+                option(value='37') Klocko Inc
+                option(value='89') Klocko-Murray
+                option(value='36') Koch-Berge
+                option(value='95') Koch-Stroman
+                option(value='53') Kovacek, Bailey and Franecki
+                option(value='8') Kris Inc
+                option(value='32') Kunze, Kreiger and Crist
+                option(value='31') Labadie-Little
+                option(value='57') Larson-Howe
+                option(value='56') Leffler Ltd
+                option(value='21') Little-Rohan
+                option(value='16') McCullough-Emard
+                option(value='42') McCullough, Hudson and Fay
+                option(value='33') Miller Group
+                option(value='75') Muller, Jacobson and Monahan
+                option(value='5') Murazik, Breitenberg and Gleichner
+                option(value='98') Murphy Ltd
+                option(value='64') O'Conner-Douglas
+                option(value='52') Olson-Kuphal
+                option(value='94') Ondricka, Morissette and Corkery
+                option(value='83') Osinski-Price
+                option(value='93') Pacocha Group
+                option(value='66') Parker-Homenick
+                option(value='80') Parker PLC
+                option(value='69') Purdy-Huels
+                option(value='38') Quigley and Sons
+                option(value='85') Reichert-Boyle
+                option(value='51') Reinger-Terry
+                option(value='23') Robel Inc
+                option(value='40') Rodriguez-Ledner
+                option(value='68') Rolfson-Little
+                option(value='7') Roob and Sons
+                option(value='1') Roob LLC
+                option(value='26') Russel Ltd
+                option(value='96') Russel PLC
+                option(value='10') Sanford-Graham
+                option(value='48') Schmeler-Borer
+                option(value='29') Schmitt LLC
+                option(value='99') Schneider-Jacobson
+                option(value='47') Schuster-Fritsch
+                option(value='20') Shanahan-Goodwin
+                option(value='24') Sipes and Sons
+                option(value='6') Sporer, Marks and Raynor
+                option(value='58') Stamm-Greenfelder
+                option(value='17') Stokes-Cronin
+                option(value='81') Torp and Sons
+                option(value='90') Torphy, Gusikowski and Goodwin
+                option(value='2') Towne, Champlin and Tillman
+                option(value='74') Towne LLC
+                option(value='60') Turner, Breitenberg and Wintheiser
+                option(value='92') Watsica, Hauck and Hills
+                option(value='62') Wehner, Beier and Emmerich
+                option(value='55') Weimann, Rath and Quitzon
+                option(value='71') West-Reichert
+                option(value='79') White-Botsford
+                option(value='54') Wiegand, Glover and Paucek
+                option(value='27') Wilderman and Sons
+                option(value='59') Yost-Stroman
+                option(value='13') Yundt LLC
+                option(value='19') Zulauf Inc
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-53') Email:
+              input#text-input-53.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-54') Phone:
+              input#text-input-54.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-55') Address:
+              input#text-input-55.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-56') City:
+              input#text-input-56.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-57') Province/State:
+              input#text-input-57.form-input(type='text')
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='select-input-58') Country:
+              select#select-input-58.form-select
+                option(value='')
+                option(value='CA') Canada
+                option(value='US') United States
+              // 
+            .pr-6.pb-8.w-full(class='lg:w-1/2')
+              label.form-label(for='text-input-59') Postal code:
+              input#text-input-59.form-input(type='text')
+              // 
+          .px-8.py-4.bg-gray-50.border-t.border-gray-100.flex.justify-end.items-center
+            button.flex.items-center.btn-indigo(type='submit')
+              // 
+              | Create Contact
+
+

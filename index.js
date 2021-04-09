@@ -21,8 +21,14 @@ app.get('/login', (req, res) => {
   res.render('login');
 });
 
+app.get('/organizations/new', (req, res) => {
+  res.render('new-org');
+});
 app.get('/organizations', (req, res) => {
   res.render('organizations');
+});
+app.get('/contacts/new', (req, res) => {
+  res.render('new-contact');
 });
 app.get('/contacts', (req, res) => {
   res.render('contacts');
