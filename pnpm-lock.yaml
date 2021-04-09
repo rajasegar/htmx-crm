@@ -11,7 +11,7 @@ devDependencies:
   postcss-cli: 8.3.1_postcss@8.2.9
   postcss-import: 14.0.1_postcss@8.2.9
   tailwindcss: 2.1.1_0bca15301caac8bc71ea0ad94045571f
-lockfileVersion: 5.2
+lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.12.13:
     dependencies:

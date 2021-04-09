@@ -21,5 +21,15 @@ app.get('/login', (req, res) => {
   res.render('login');
 });
 
+app.get('/organizations', (req, res) => {
+  res.render('organizations');
+});
+app.get('/contacts', (req, res) => {
+  res.render('contacts');
+});
+app.get('/reports', (req, res) => {
+  res.render('reports');
+});
+
 app.listen(PORT);
 console.log('Listening on port: ', PORT);
