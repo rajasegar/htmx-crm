@@ -2,7 +2,10 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./views/**/*.pug'],
+  purge: {
+    enabled: true,
+    content: ['./views/**/*.pug'],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {

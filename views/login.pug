@@ -1,26 +1,30 @@
-extends _layout
-block body
-  .p-6.bg-indigo-800.min-h-screen.flex.justify-center.items-center
-    .w-full.max-w-md
-      p.text-center.text-white.text-xl.font-bold htmx-CRM
-      form.mt-8.bg-white.rounded-lg.shadow-xl.overflow-hidden
-        .px-10.py-12
-          h1.text-center.font-bold.text-3xl Welcome Back!
-          .mx-auto.mt-6.w-24.border-b-2
-          .mt-10
-            label.form-label(for='text-input-5') Email:
-            input#text-input-5.form-input(type='email' autofocus='autofocus' autocapitalize='off')
-            // 
-          .mt-6
-            label.form-label(for='text-input-6') Password:
-            input#text-input-6.form-input(type='password')
-            // 
-          label.mt-6.select-none.flex.items-center(for='remember')
-            input#remember.mr-1(type='checkbox')
-            span.text-sm Remember Me
-        .px-10.py-4.bg-gray-100.border-t.border-gray-100.flex.justify-between.items-center
-          a(tabindex='-1' href='#reset-password' class='hover:underline') Forget password?
-          button.flex.items-center.btn-indigo(type='submit')
-            // 
-            | Login
+doctype html
+html.h-full.bg-gray-100
+  head
+    title htmx CRM
+    link(href="/styles.css", rel="stylesheet")
+  body.font-sans.leading-none.text-gray-700.antialiased
+    .p-6.bg-indigo-800.min-h-screen.flex.justify-center.items-center
+      .w-full.max-w-md
+        p.text-center.text-white.text-xl.font-bold htmx-CRM
+        form.mt-8.bg-white.rounded-lg.shadow-xl.overflow-hidden
+          .px-10.py-12
+            h1.text-center.font-bold.text-3xl Welcome Back!
+            .mx-auto.mt-6.w-24.border-b-2
+            .mt-10
+              label.form-label(for='text-input-5') Email:
+              input#text-input-5.form-input(type='email' autofocus='autofocus' autocapitalize='off')
+              // 
+            .mt-6
+              label.form-label(for='text-input-6') Password:
+              input#text-input-6.form-input(type='password')
+              // 
+            label.mt-6.select-none.flex.items-center(for='remember')
+              input#remember.mr-1(type='checkbox')
+              span.text-sm Remember Me
+          .px-10.py-4.bg-gray-100.border-t.border-gray-100.flex.justify-between.items-center
+            a(tabindex='-1' href='#reset-password' class='hover:underline') Forget password?
+            button.flex.items-center.btn-indigo(type='submit')
+              // 
+              | Login
 
